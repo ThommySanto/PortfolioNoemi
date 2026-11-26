@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portfolio beauty visual creator di Noemi Sbaffo.">
+  <title>Noemi Sbaffo | Beauty Visual Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav class="nav shell"><a class="brand" href="#top">NOEMI <i>SBAFFO</i></a><div class="links"><a href="#portfolio">Portfolio</a><a href="#about">Chi sono</a><a href="#contact">Contatti</a></div><a class="under" href="#contact">Collabora con me</a></nav>
+  <main>
+    <section id="top" class="hero shell"><div class="copy"><p class="eyebrow">Beauty visual creator � Italia</p><h1>Il tuo prodotto,<br><em>impossibile</em><br>da ignorare.</h1><p>Creo visual beauty luminosi, curati e pronti per farsi notare. Dallo scatto del prodotto alla post-produzione creativa con AI, trasformo ogni idea in una piccola campagna.</p><div class="actions"><a class="button" href="#portfolio">Scopri il portfolio</a><a class="under" href="https://www.instagram.com/noemi.sbaffo/" target="_blank" rel="noreferrer">Instagram</a></div></div><div class="hero-art"><div class="orb one"></div><div class="orb two"></div><div class="waves"></div><div class="bottle"><small>BEAUTY</small><b>VISUALS</b><i>by Noemi</i></div><span class="tag">creative<br>direction</span></div></section>
+    <section class="quote"><p>Beauty immagini che sembrano <em>campagne.</em><br>Pensate per far fermare lo scroll.</p></section>
+    <section id="portfolio" class="portfolio shell"><header><div><p class="eyebrow">Selected work</p><h2>Portfolio</h2></div><p>Concept visual per raccontare texture, luce e desiderabilit� del prodotto.</p></header><div class="filters"><button>Tutti</button><button>Occhi</button><button>Labbra</button><button>Guance</button><button>Skincare</button></div><div id="gallery" class="gallery"></div><p class="disclaimer">I visual mostrati sono concept creativi indipendenti e non costituiscono collaborazioni ufficiali con i marchi eventualmente raffigurati.</p></section>
+    <section id="about" class="about"><div class="shell about-grid"><div class="portrait"><div><span>NOEMI<br>SBAFFO</span></div><small>beauty creator<br>based in Italy</small></div><div class="about-copy"><p class="eyebrow">About me</p><h2>Un prodotto<br>merita la sua<br><em>scena.</em></h2><p>Sono Noemi Sbaffo, beauty visual creator. Prendo un prodotto reale e costruisco attorno un immaginario fatto di luce, materie, texture, colore e dettagli.</p><p>Ogni progetto parte dall'identit� del brand ed � pensato per social, e-commerce e comunicazione digitale.</p><a class="under" href="#contact">Parliamo del tuo prodotto</a></div></div></section>
+    <section class="services shell"><p class="eyebrow">Cosa posso creare</p><div><article><small>01</small><h3>Product visual</h3><p>Immagini prodotto d'impatto, con set e direzione estetica pensati per il tuo brand.</p></article><article><small>02</small><h3>Creative retouch</h3><p>Post-produzione e AI creative per elevare lo scatto e renderlo pronto per una campagna.</p></article><article><small>03</small><h3>Social content</h3><p>Visual verticali e formati digitali progettati per fermare lo scroll.</p></article></div></section>
+    <section id="contact" class="contact"><div class="shell"><p class="eyebrow">Let's create</p><h2>Facciamo brillare<br><em>il tuo prodotto.</em></h2><p>Hai un prodotto beauty da raccontare? Scrivimi e costruiamo insieme il suo prossimo visual.</p><div class="actions"><a class="button white" href="mailto:noemisbaffo744@gmail.com">Scrivimi un'email</a><a class="under" href="https://www.instagram.com/noemi.sbaffo/" target="_blank" rel="noreferrer">@noemi.sbaffo</a></div></div></section>
+  </main>
+  <footer class="shell"><span>� 2026 Noemi Sbaffo</span><a href="mailto:noemisbaffo744@gmail.com">noemisbaffo744@gmail.com</a><a href="https://www.instagram.com/noemi.sbaffo/" target="_blank" rel="noreferrer">Instagram</a></footer>
+  <script>
+    const files=["WhatsApp Image 2026-11-26 at 09.39.10.jpeg","WhatsApp Image 2026-11-26 at 09.39.10 (1).jpeg","WhatsApp Image 2026-11-26 at 09.39.10 (2).jpeg","WhatsApp Image 2026-11-26 at 09.39.10 (3).jpeg","WhatsApp Image 2026-11-25 at 00.16.17.jpeg","WhatsApp Image 2026-11-25 at 00.11.35.jpeg","WhatsApp Image 2026-11-25 at 00.14.50.jpeg","WhatsApp Image 2026-11-25 at 00.10.51.jpeg","WhatsApp Image 2026-11-25 at 00.09.50.jpeg","WhatsApp Image 2026-11-25 at 00.07.13.jpeg","WhatsApp Image 2026-11-25 at 00.08.41.jpeg","WhatsApp Image 2026-11-25 at 00.03.55.jpeg"];
+    const labels=["Labbra","Skincare","Guance","Occhi","Beauty","Labbra","Skincare","Guance","Beauty","Occhi","Labbra","Skincare"], colors=["pink","blue","pink","pearl","gold","pink","blue","pink","gold","pearl","pink","blue"];
+    document.querySelector("#gallery").innerHTML=files.map((file,i)=>'<article class="card"><div class="placeholder '+colors[i]+'">'+labels[i]+'</div><img src="/portfolio/'+encodeURIComponent(file)+'" alt="Concept visual beauty: '+labels[i]+'" loading="lazy" onerror="this.remove()"><div class="caption"><small>Concept visual</small><b>'+labels[i]+'</b></div></article>').join("");
+  </script>
+</body>
+</html>
+
