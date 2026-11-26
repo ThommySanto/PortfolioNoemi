@@ -1,5 +1,0 @@
-Get-Content: 
-Line |
-  15 |  Get-Content -Raw -LiteralPath "  15 |  . *.py' | Where-Object { $_.Fu .
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path '  15 |  . *.py' | Where-Object { .FullName -notmatch '\.library-tmp\' } | Sel .' because it does not exist.
