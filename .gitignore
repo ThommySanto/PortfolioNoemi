@@ -1,0 +1,18 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# Next.js
+/.next/
+/out/
+
+# local environment files
+.env*.local
+
+# deployment / editor files
+.vercel
+.library-tmp
+.DS_Store
+*.tsbuildinfo
+
