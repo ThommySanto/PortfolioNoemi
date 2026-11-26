@@ -1,5 +1,0 @@
-Get-Content: 
-Line |
-  15 |  Get-Content -Raw -LiteralPath "     | Invalid pattern '\.library-tmp\ .
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path '     | Invalid pattern '\.library-tmp\' at offset 14. Illegal \ at end of pattern.' because it does not exist.
